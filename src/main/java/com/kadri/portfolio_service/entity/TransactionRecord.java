@@ -15,7 +15,7 @@ import java.time.OffsetDateTime;
 @AllArgsConstructor
 @Setter
 @Getter
-public class Transactions {
+public class TransactionRecord {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
