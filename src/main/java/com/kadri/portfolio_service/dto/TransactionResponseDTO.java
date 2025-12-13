@@ -1,6 +1,7 @@
 package com.kadri.portfolio_service.dto;
 
 import com.kadri.portfolio_service.entity.TransactionType;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,6 +10,7 @@ import java.time.OffsetDateTime;
 
 @Getter
 @Setter
+@Builder
 public class TransactionResponseDTO {
     private Long id;
     private Long userId;
