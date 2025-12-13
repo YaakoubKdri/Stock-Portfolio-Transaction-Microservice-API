@@ -1,10 +1,7 @@
 package com.kadri.portfolio_service.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
@@ -15,6 +12,7 @@ import java.time.OffsetDateTime;
 @AllArgsConstructor
 @Setter
 @Getter
+@Builder
 public class TransactionRecord {
 
     @Id
