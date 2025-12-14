@@ -33,7 +33,7 @@ public class PortfolioController {
         return ResponseEntity.ok(holdings);
     }
 
-    @PostMapping("transaction")
+    @PostMapping("/transaction")
     @Operation(summary = "Execute a BUY or SELL transaction")
     public ResponseEntity<TransactionResponseDTO> executeTransaction(@Valid @RequestBody TransactionRequestDTO request){
         var response = toResponse(service.executeTransaction(request));
